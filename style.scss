@@ -1,0 +1,133 @@
+body{
+    background-color:lightgray;
+}
+
+.kleurblokken{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 300px 50px;
+    grid-template-rows: repeat( 5, 30px)  ;
+    grid-gap: 1px;
+    grid-template-areas:
+    "h ."
+    "r ."
+    "o ."
+    "p ."
+    "g .";
+}
+
+.menu{
+    cursor: pointer;
+}
+
+.menu:hover{
+    display: block;
+}
+
+.streep{
+    width: 40px;
+    height: 6px;
+    background: black;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+nav .kleurblokken{
+    display: none;
+}
+
+h1{
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+
+.grey-blok{
+    width: 60px;
+    height: 30px;
+    grid-gap: 2px;  
+    background-color: lightgray;
+    cursor: pointer;
+    grid-area: h;
+}
+
+.grey-blok:hover{
+    width: 300px;
+    transition:  width 2s ease-in-out;
+}
+
+.red-blok{
+    width: 60px; 
+    height: 30px;
+    margin: 1px 0px 1px 0px;
+    background-color: red;
+    cursor: pointer;
+    grid-area: r;
+}
+
+.red-blok:hover{
+    width: 300px;
+    transition:  width 2s ease-in-out;
+}
+
+.orange-blok{
+    width: 60px; 
+    height: 30px;
+    margin: 1px 0px 1px 0px; 
+    background-color: #ff6200;
+    cursor: pointer;
+    grid-area: o;
+}
+
+.orange-blok:hover{
+    width: 300px;
+    transition:  width 2s ease-in-out;
+}
+
+.purple-blok{
+    width: 60px; 
+    height: 30px;
+    margin: 1px 0px 1px 0px;   
+    background-color: purple;
+    cursor: pointer;
+    grid-area: p;
+}
+
+.purple-blok:hover{
+    width: 300px;
+    transition:  width 2s ease-in-out;
+}
+
+.green-blok{
+    width: 60px; 
+    height: 30px;
+    margin: 1px 0px 1px 0px;    
+    background-color: green;
+    cursor: pointer;
+    grid-area: g;
+}
+
+.green-blok:hover{
+    width: 300px;
+    transition:  width 2s ease-in-out;
+}
+
+.grey-background{
+   background-color: lightgrey;
+}
+
+.red-background{
+   background-color: red;
+}
+
+.orange-background{
+   background-color: #ff6200;
+}
+
+.purple-background{
+    background-color: purple;
+}
+
+.green-background{
+    background-color: green; 
+}

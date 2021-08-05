@@ -1,0 +1,151 @@
+body {
+  background-color: lightgray;
+}
+
+.kleurblokken {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 300px 50px;
+      grid-template-columns: 300px 50px;
+  -ms-grid-rows: (30px)[5];
+      grid-template-rows: repeat(5, 30px);
+  grid-gap: 1px;
+      grid-template-areas: "h ." "r ." "o ." "p ." "g .";
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.menu:hover {
+  display: block;
+}
+
+.streep {
+  width: 40px;
+  height: 6px;
+  background: black;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+nav .kleurblokken {
+  display: none;
+}
+
+h1 {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grey-blok {
+  width: 60px;
+  height: 30px;
+  grid-gap: 2px;
+  background-color: lightgray;
+  cursor: pointer;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: h;
+}
+
+.grey-blok:hover {
+  width: 300px;
+  -webkit-transition: width 2s ease-in-out;
+  transition: width 2s ease-in-out;
+}
+
+.red-blok {
+  width: 60px;
+  height: 30px;
+  margin: 1px 0px 1px 0px;
+  background-color: red;
+  cursor: pointer;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: r;
+}
+
+.red-blok:hover {
+  width: 300px;
+  -webkit-transition: width 2s ease-in-out;
+  transition: width 2s ease-in-out;
+}
+
+.orange-blok {
+  width: 60px;
+  height: 30px;
+  margin: 1px 0px 1px 0px;
+  background-color: #ff6200;
+  cursor: pointer;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: o;
+}
+
+.orange-blok:hover {
+  width: 300px;
+  -webkit-transition: width 2s ease-in-out;
+  transition: width 2s ease-in-out;
+}
+
+.purple-blok {
+  width: 60px;
+  height: 30px;
+  margin: 1px 0px 1px 0px;
+  background-color: purple;
+  cursor: pointer;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: p;
+}
+
+.purple-blok:hover {
+  width: 300px;
+  -webkit-transition: width 2s ease-in-out;
+  transition: width 2s ease-in-out;
+}
+
+.green-blok {
+  width: 60px;
+  height: 30px;
+  margin: 1px 0px 1px 0px;
+  background-color: green;
+  cursor: pointer;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: g;
+}
+
+.green-blok:hover {
+  width: 300px;
+  -webkit-transition: width 2s ease-in-out;
+  transition: width 2s ease-in-out;
+}
+
+.grey-background {
+  background-color: lightgrey;
+}
+
+.red-background {
+  background-color: red;
+}
+
+.orange-background {
+  background-color: #ff6200;
+}
+
+.purple-background {
+  background-color: purple;
+}
+
+.green-background {
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */
